@@ -1,0 +1,6 @@
+contract-name: 'PayToSHA256'
+entrypoint: 'PayToSHA256.sol'
+contract-address: '0xD35e6F3B26F8992a7F023Ad878e13A82ddEd2232'
+network: 'mainnet'
+compiler: 'v0.4.4+commit.4633f3de'
+optimized: false
