@@ -2,7 +2,15 @@
   "name": "ethereum-contract-verifier",
   "version": "1.0.0",
   "description": "Verify deployed ethereum contract's source code",
-  "main": "index.js",
+  "keywords": [
+    "ethereum"
+  ],
+  "license": "Apache-2.0",
+  "author": "dimorinny",
+  "main": "./index.js",
+  "scripts": {
+    "start": "node ./lib/index.js"
+  },
   "dependencies": {
     "js-yaml": "^3.10.0",
     "solc": "^0.4.20",
@@ -11,12 +19,8 @@
   "devDependencies": {
     "standard": "^11.0.0"
   },
-  "scripts": {
-    "start": "node ./lib/index.js"
+  "enines": {
+    "node": ">=8.0.0"
   },
-  "keywords": [
-    "ethereum"
-  ],
-  "author": "dimorinny",
-  "license": "Apache-2.0"
+  "private": true
 }
