@@ -21,7 +21,8 @@
       ]
     },
     "compiler": {
-      "type": "string"
+      "type": "string",
+      "pattern": "^v\\d*.\\d*.\\d*.*$"
     },
     "optimized": {
       "type": "boolean"
