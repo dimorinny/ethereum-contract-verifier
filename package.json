@@ -19,7 +19,7 @@
   "devDependencies": {
     "standard": "^11.0.0"
   },
-  "enines": {
+  "engines": {
     "node": ">=8.0.0"
   },
   "private": true
