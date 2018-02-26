@@ -1,0 +1,6 @@
+contract-name: 'TheCoin'
+entrypoint: 'TheCoin.sol'
+contract-address: '0x0587eB954974000cc6588dE6702B3BeaeB0215f4'
+network: 'mainnet'
+compiler: 'v0.4.2+commit.af6afb04'
+optimization-runs: 200
