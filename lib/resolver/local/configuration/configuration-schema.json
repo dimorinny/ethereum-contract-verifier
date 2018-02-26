@@ -24,9 +24,16 @@
       "type": "string",
       "pattern": "^v\\d*.\\d*.\\d*.*$"
     },
-    "optimized": {
-      "type": "boolean"
-    },
-    "additionalProperties": false
-  }
+    "optimization-runs": {
+      "type": "number"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "contract-name",
+    "entrypoint",
+    "contract-address",
+    "network",
+    "compiler"
+  ]
 }
