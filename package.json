@@ -9,6 +9,7 @@
   "author": "dimorinny",
   "main": "./index.js",
   "scripts": {
+    "lint": "standard",
     "start": "node ./lib/index.js",
     "test": "mocha test --timeout 100000"
   },
