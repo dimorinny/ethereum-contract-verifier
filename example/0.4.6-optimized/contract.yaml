@@ -1,0 +1,6 @@
+contract-name: 'BokkyPooBahWuzHere'
+entrypoint: 'BokkyPooBahWuzHere.sol'
+contract-address: '0x952c9a569725d4cb710c69184e5eb8f56d6b8bd6'
+network: 'mainnet'
+compiler: 'v0.4.6+commit.2dabbdf0'
+optimization-runs: 200

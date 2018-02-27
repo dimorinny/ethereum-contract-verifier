@@ -1,0 +1,6 @@
+contract-name: 'The10ETHPyramid'
+entrypoint: 'The10ETHPyramid.sol'
+contract-address: '0x80D9C4F6209044De069c545f68644419b520a02F'
+network: 'mainnet'
+compiler: 'v0.3.0-nightly.2016.3.30+commit.c2cf806'
+optimization-runs: 200

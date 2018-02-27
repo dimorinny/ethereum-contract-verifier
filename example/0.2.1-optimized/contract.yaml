@@ -1,0 +1,6 @@
+contract-name: 'X3'
+entrypoint: 'X3.sol'
+contract-address: '0xbb9854BFD082c48B4D426aC6A2a152B01326f46F'
+network: 'mainnet'
+compiler: 'v0.2.1+commit.91a6b35'
+optimization-runs: 200
