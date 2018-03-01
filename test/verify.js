@@ -38,11 +38,10 @@ describe('verify method', async () => {
     )
   })
 
-  // TODO dimorinny: fix
-  // it('should returns true for 0.4.20-optimized folder', async () => {
-  //   assert.equal(
-  //     await verify('example/0.4.20-optimized'),
-  //     true
-  //   )
-  // })
+  it('should returns true for 0.4.20-optimized folder', async () => {
+    assert.equal(
+      await verify('example/0.4.20-optimized'),
+      true
+    )
+  })
 })
