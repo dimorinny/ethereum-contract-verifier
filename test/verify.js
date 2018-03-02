@@ -1,68 +1,26 @@
-const assert = require('assert')
+const test = require('tape')
 const {verify} = require('../lib/verify')
 
-describe('verify method', async () => {
+const cases = [
+  '0.2.1-optimized',
+  '0.3.0-optimized',
+  '0.4.2-optimized',
+  '0.4.4-without-optimizations',
+  '0.4.6-optimized',
+  '0.4.20-optimized',
+  '0.4.20-multiple-files',
+  '0.4.20-multiple-files-with-back-import',
+  '0.4.20-multiple-files-with-double-back-import'
+]
 
-  it('should returns true for 0.2.1-optimized folder', async () => {
-    assert.equal(
-      await verify('example/0.2.1-optimized'),
-      true
-    )
+test('verify method', async t => {
+
+  cases.forEach(async folder => {
+    t.test(`should returns true for ${folder} folder`, async (t) => {
+      t.true(await verify(`example/${folder}`))
+      t.end()
+    })
   })
 
-  it('should returns true for 0.3.0-optimized folder', async () => {
-    assert.equal(
-      await verify('example/0.3.0-optimized'),
-      true
-    )
-  })
-
-  it('should returns true for 0.4.2-optimized folder', async () => {
-    assert.equal(
-      await verify('example/0.4.2-optimized'),
-      true
-    )
-  })
-
-  it('should returns true for 0.4.4-without-optimizations folder', async () => {
-    assert.equal(
-      await verify('example/0.4.4-without-optimizations'),
-      true
-    )
-  })
-
-  it('should returns true for 0.4.6-optimized folder', async () => {
-    assert.equal(
-      await verify('example/0.4.6-optimized'),
-      true
-    )
-  })
-
-  it('should returns true for 0.4.20-optimized folder', async () => {
-    assert.equal(
-      await verify('example/0.4.20-optimized'),
-      true
-    )
-  })
-
-  it('should returns true for 0.4.20-multiple-files folder', async () => {
-    assert.equal(
-      await verify('example/0.4.20-multiple-files'),
-      true
-    )
-  })
-
-  it('should returns true for 0.4.20-multiple-files-with-back-import folder', async () => {
-    assert.equal(
-      await verify('example/0.4.20-multiple-files-with-back-import'),
-      true
-    )
-  })
-
-  it('should returns true for 0.4.20-multiple-files-with-double-back-import folder', async () => {
-    assert.equal(
-      await verify('example/0.4.20-multiple-files-with-double-back-import'),
-      true
-    )
-  })
+  t.end()
 })
