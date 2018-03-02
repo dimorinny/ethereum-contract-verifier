@@ -44,4 +44,25 @@ describe('verify method', async () => {
       true
     )
   })
+
+  it('should returns true for 0.4.20-multiple-files folder', async () => {
+    assert.equal(
+      await verify('example/0.4.20-multiple-files'),
+      true
+    )
+  })
+
+  it('should returns true for 0.4.20-multiple-files-with-back-import folder', async () => {
+    assert.equal(
+      await verify('example/0.4.20-multiple-files-with-back-import'),
+      true
+    )
+  })
+
+  it('should returns true for 0.4.20-multiple-files-with-double-back-import folder', async () => {
+    assert.equal(
+      await verify('example/0.4.20-multiple-files-with-double-back-import'),
+      true
+    )
+  })
 })
