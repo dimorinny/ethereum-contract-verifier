@@ -10,7 +10,9 @@ const cases = [
   '0.4.20-optimized',
   '0.4.20-multiple-files',
   '0.4.20-multiple-files-with-back-import',
-  '0.4.20-multiple-files-with-double-back-import'
+  '0.4.20-multiple-files-with-double-back-import',
+  '0.4.20-multiple-files-with-back-import-on-second-level',
+  '0.4.20-multiple-files-with-import-on-second-level'
 ]
 
 test('verify method', async t => {
