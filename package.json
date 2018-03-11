@@ -9,11 +9,12 @@
   "author": "dimorinny",
   "main": "./index.js",
   "scripts": {
-    "start": "node ./lib/index.js",
+    "start": "./index.js verify example/0.2.1-optimized",
     "test": "tape test/**/*.js | tap-spec"
   },
   "dependencies": {
     "ajv": "^6.1.1",
+    "commander": "^2.15.0",
     "js-yaml": "^3.10.0",
     "jsonpath": "^1.0.0",
     "solc": "^0.4.20",
@@ -27,6 +28,9 @@
   },
   "engines": {
     "node": ">=8.0.0"
+  },
+  "bin": {
+    "ethereum-contract-verifier": "./index.js"
   },
   "private": true
 }
