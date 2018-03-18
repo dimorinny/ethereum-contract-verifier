@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/dimorinny/ethereum-contract-verifier.svg?branch=master)](https://travis-ci.org/dimorinny/ethereum-contract-verifier)
+
 ```
 Usage: ethereum-contract-verifier [options] [command]
 
