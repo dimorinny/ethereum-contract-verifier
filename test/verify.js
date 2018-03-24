@@ -19,7 +19,19 @@ test('verify method', async t => {
 
   cases.forEach(async folder => {
     t.test(`should returns true for ${folder} folder`, async (t) => {
-      t.true(await verify(`example/${folder}`))
+      const result = await verify(`example/${folder}`)
+      const matched = result.localByteCode === result.remoteByteCode
+
+      console.log(`Local: ${result.localByteCode}`)
+      console.log()
+      console.log(`Remote: ${result.remoteByteCode}`)
+
+      console.log()
+      console.log(`Abi: ${result.abi}`)
+      console.log()
+      console.log(`Matched: ${matched}`)
+
+      t.true(matched)
       t.end()
     })
   })

@@ -19,7 +19,16 @@ Passed directory should contains contract.yaml file, that has metadata for verif
 
 function verifyCommand (directory, command) {
   verify(directory)
-    .then(matched => {
+    .then(result => {
+      const matched = result.localByteCode === result.remoteByteCode
+
+      console.log(`Local: ${result.localByteCode}`)
+      console.log()
+      console.log(`Remote: ${result.remoteByteCode}`)
+
+      console.log()
+      console.log(`Abi: ${result.abi}`)
+      console.log()
       console.log(`Matched: ${matched}`)
 
       if (matched) {
