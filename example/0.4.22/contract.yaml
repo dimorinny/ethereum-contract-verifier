@@ -1,0 +1,5 @@
+contract-name: 'JCCoin'
+entrypoint: 'JCCoin.sol'
+contract-address: '0xc8f8ababf7ee2a1fc89e904b321e2cd8cf252348'
+network: 'mainnet'
+compiler: 'v0.4.22-nightly.2018.3.30+commit.326d656a'
