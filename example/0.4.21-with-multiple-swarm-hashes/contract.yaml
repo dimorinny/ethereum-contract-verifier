@@ -1,0 +1,5 @@
+contract-name: 'Crowdsale'
+entrypoint: 'Crowdsale.sol'
+contract-address: '0xb9724eda3510d64eabb0c2ecf5ccc068ad052bd1'
+network: 'mainnet'
+compiler: 'v0.4.21+commit.dfe3193c'

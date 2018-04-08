@@ -9,7 +9,7 @@
   "author": "dimorinny",
   "main": "./index.js",
   "scripts": {
-    "start": "./index.js verify example/0.2.1-optimized",
+    "start": "./index.js verify example/0.4.22",
     "test": "tape test/**/*.js | tap-spec"
   },
   "dependencies": {

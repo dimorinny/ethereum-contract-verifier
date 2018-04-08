@@ -13,6 +13,7 @@ const cases = [
   '0.4.20-multiple-files-with-double-back-import',
   '0.4.20-multiple-files-with-back-import-on-second-level',
   '0.4.20-multiple-files-with-import-on-second-level',
+  '0.4.21-with-multiple-swarm-hashes',
   '0.4.22-optimized'
 ]
 
